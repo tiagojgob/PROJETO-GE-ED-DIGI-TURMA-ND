@@ -1,0 +1,110 @@
+/* O seletor '*' aplica as regras a TODOS os elementos da página.
+  É muito usado para fazer um "reset" básico, tirando margens padrão 
+  que o próprio navegador coloca e que podem atrapalhar o layout.
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Garante que larguras e espaçamentos sejam calculados corretamente */
+}
+
+/* O seletor 'body' estiliza o corpo inteiro da página.
+  Aqui definimos a fonte principal, a cor do texto e o fundo.
+*/
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Uma fonte moderna e limpa */
+    background-color: #f4f7f6; /* Um tom de cinza bem claro para o fundo não cansar os olhos */
+    color: #333333; /* Cinza escuro para o texto, que dá uma leitura mais confortável que o preto puro */
+    line-height: 1.6; /* Aumenta o espaçamento entre as linhas do texto */
+}
+
+/* O seletor 'header' estiliza o cabeçalho da página.
+*/
+header {
+    background-color: #007acc; /* O clássico azul do VS Code */
+    color: #ffffff; /* Texto em branco para dar contraste */
+    text-align: center; /* Centraliza o título */
+    padding: 2rem 1rem; /* Espaçamento interno (cima/baixo e lados) para dar respiro ao título */
+    margin-bottom: 2rem; /* Espaço por fora, empurrando o conteúdo de baixo para não colar */
+}
+
+/* Modifica especificamente o título principal h1 dentro do header 
+*/
+header h1 {
+    font-size: 2.2rem;
+}
+
+/* O seletor 'div' aqui vai criar cartões (cards) para cada bloco de conteúdo,
+  deixando a página organizada e bem distribuída.
+*/
+div {
+    background-color: #ffffff; /* Fundo branco para destacar os blocos do fundo cinza */
+    max-width: 800px; /* Limita a largura máxima para o texto não ficar esticado em telas grandes */
+    margin: 0 auto 1.5rem auto; /* Centraliza a div na tela (auto nas laterais) e deixa espaço embaixo */
+    padding: 20px; /* Espaço interno entre as bordas da div e o texto */
+    border-radius: 8px; /* Arredonda os cantos dos blocos */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Cria uma sombra leve para dar efeito de profundidade */
+}
+
+/* Estilização dos subtítulos h2 e h3 para criar uma hierarquia visual clara
+*/
+h2, h3 {
+    color: #007acc; /* Usa o mesmo azul do cabeçalho nos títulos secundários */
+    margin-bottom: 10px; /* Espaço entre o título e o parágrafo abaixo dele */
+}
+
+/* Estilização dos parágrafos
+*/
+p {
+    margin-bottom: 12px; /* Adiciona um espaço abaixo de cada parágrafo */
+}
+
+/* Estilização da lista de sugestões (ul e li)
+*/
+ul {
+    margin-left: 20px; /* Empurra a lista um pouco para a direita */
+    margin-bottom: 12px;
+}
+
+li {
+    margin-bottom: 5px; /* Espaço entre um item da lista e outro */
+    color: #555555;
+}
+
+/* Estilização do link (tag a)
+*/
+a {
+    color: #007acc; /* Cor do link */
+    text-transform: uppercase; /* Deixa o texto em letras maiúsculas */
+    font-weight: bold; /* Deixa em negrito */
+    text-decoration: none; /* Remove aquele sublinhado padrão dos links */
+    display: inline-block; /* Permite aplicar margens corretamente no link */
+    margin-top: 10px;
+    transition: color 0.3s ease; /* Efeito suave quando o mouse passa por cima */
+}
+
+/* Efeito 'hover': o que acontece quando passamos o mouse sobre o link
+*/
+a:hover {
+    color: #005999; /* O azul fica ligeiramente mais escuro */
+    text-decoration: underline; /* O sublinhado reaparece apenas ao passar o mouse */
+}
+
+/* Estilização da imagem (logotipo do VS Code)
+*/
+img {
+    display: block; /* Transforma a imagem em bloco para podermos centralizá-la */
+    max-width: 120px; /* Limita o tamanho do logotipo para não ficar gigante */
+    margin: 0 auto; /* Centraliza a imagem dentro da sua div */
+}
+
+/* O seletor 'footer' estiliza o rodapé da página
+*/
+footer {
+    text-align: center; /* Centraliza o texto do professor */
+    padding: 1.5rem; /* Espaço interno */
+    background-color: #333333; /* Fundo cinza escuro */
+    color: #ffffff; /* Texto branco */
+    margin-top: 3rem; /* Garante que fique bem afastado do último bloco */
+    font-size: 0.9rem;
+}
